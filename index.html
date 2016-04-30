@@ -4,58 +4,202 @@
         <title>STIMALESS</title>
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <script src="js/bootstrap.min.js"></script>
+        <script src="code.jquery.com/jquery-2.2.3.min.js"></script>
     </head>
         <body>
             <!--Nvigation Bar-->
-             <nav class="navbar navbar-inverse">
+             <nav class="navbar navbar-inverse" style="height: 40px">
                   <div class="container-fluid">
                       
                       <!--Logo!-->
                       <div class="navbar-header">
-                            <a href="#" class="navbar-brand">STIMALESS</a>
+                            <a href="#" class="navbar-brand">STIMALITE</a>
                       </div>
                       
                       <!--Menu Items-->
                       <div>
-                          <ul class="nav navbar-nav">
-                              <li class="active"><a href="#">HOME</a></li>
-                              <li><a href="#">MY LOCATIONS</a></li>
-                              <li><a href="#">SETTINGS</a></li>
-                          </ul>
+                            <form class="navbar-form navbar-right" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search for a location">
+                                </div>
+                                <button type="submit" class="btn btn-default">SEARCH</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    SETTINGS<span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">MY ACCOUNT</a></li>
+                                            <li><a href="#">MANAGE LOCATIONS></a></li>
+                                        </ul>
+                                </li>
+                            </ul>
                       </div>
            </nav>  
           
           <div class="container">
               <div class="row">
                     <div class="col-md-4">
-                        <nav class="navbar navbar-default">
+                        <nav class="nav navbar navbar-default">
                             <div class="navbar-header">
                             <a href="#" class="navbar-brand">LANGATA</a>
                             </div>
+                            <ul class="nav navbar-nav">
+                                <li class="nav navbar-nav navbar-right"><a href="" style="text-decoration: none">View Feed</a></li>
+                                <li class="nav navbar-nav navbar-left"><img src="images/location.png" height="30" width="30" /></li>
+                            </ul>
+                            
                         </nav>
                         
-                        <img src="images/pie-chart.png" height="150" width="150" /><br/><br/>
-                        <div style="display: inline-block">
-                            <a href=""><img src="images/message.png" height="50" width="50"/></a>
-                            <a href=""><img src="images/twitter.png" height="50" width="50"/></a>
-                            <a href=""><img src="images/share.png" height="50" width="50" /></a>
+                        <!--FIRST ROW-->
+                        <div class="row">
+                            <!--Charts-->
+                            <div class="col-md-6">
+                                <img src="images/pie-chart.png" height="125" width="125" />
+                                <br><br>
+                                <p><img src="images/black.png" height="20" width="20" />  Power interuption</p> 
+                            </div>
+                            
+                            <!--Data-->
+                            <div class="col-md-6">
+                                <p>Possibility of Outage occuring</p>
+                                <p style="font-size: 50px">21%</p>
+                             
+                            </div>
+                               
                         </div>
+                        
+                        
+                        <div class='row'><div class='span12'><hr style="color: solid black; height: 15px"></div></div>
+                        
+                        <!--SECOND ROW-->
+                        <div class="row">
+                            
+                            <!--FIRST COL-->
+                            <div class="col-md-5">
+                                <img src="images/time.png" height="125" width="125"/>
+                                <br><br>
+                                
+                            </div>
+                            
+                            <!--SECOND COL-->
+                            <div class="col-md-7">
+                                <p><img src="images/box.png" height="25" width="25" style="background-color: #cc7a00"/> Scheduled Power Outages</p>
+                                <p> Friday 3rd MAY<br> <span style="font-size: 20px"> 12:00 am to 7:30 am </span>
+                            </div>    
+                             
+                        </div>
+                       
+                       <div class='row'><div class='span12'><hr style="color: solid black; height: 15px"></div></div>
+                       
+                       <!--Final Row-->
+                        <div class="row">
+                            
+                            <!--Report Col-->
+                            <div class="col-md-6">
+                                <p>Experiencing an Outage?</p>
+                                <div class="btn-group btn-group-lg" role="group" aria-label="YES"></div>
+                                <div class="btn-group" role="group" aria-label="NO">
+                                     <button type="button" class="btn btn-default" style="background-color: green">YES</button>
+                                     <button type="button" class="btn btn-default">NO</button>
+                                </div>
+                                    
+                            </div>
+                            
+                            <!--Reach KPLC col-->
+                            <div class="col-md-6">
+                                <p>Report to Kenya Power</p>
+                                <div style="display: inline-block">
+                                    <a href=""><img src="images/message.png" height="30" width="30"/></a>
+                                    <a href=""><img src="images/twitter.png" height="30" width="30"/></a>
+                                    <a href=""><img src="images/sms.png" height="30" width="30" /></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
                     </div>
                     
                     
                     <div class="col-md-4">
                         <nav class="navbar navbar-default">
                             <div class="navbar-header">
-                            <a href="#" class="navbar-brand">ROYSAMBU</a>
+                                <a href="#" class="navbar-brand">ROYSAMBU</a>
                             </div>
+                            <ul class="nav navbar-nav">
+                                <li class="nav navbar-nav navbar-right"><a href="" style="text-decoration: none">View Feed</a></li>
+                                <li class="nav navbar-nav navbar-left"><img src="images/location.png" height="30" width="30" /></li>
+                            </ul>
+                            
                         </nav>
-                        
-                        <img src="images/pie-chart.png" height="150" width="150" /><br/><br/>
-                        <div style="display: inline-block">
-                            <a href=""><img src="images/message.png" height="50" width="50"/></a>
-                            <a href=""><img src="images/twitter.png" height="50" width="50"/></a>
-                            <a href=""><img src="images/share.png" height="50" width="50" /></a>
+                        <!--FIRST ROW-->
+                        <div class="row">
+                            <!--Charts-->
+                            <div class="col-md-6">
+                                <img src="images/pie-chart.png" height="125" width="125" />
+                                <br><br>
+                                <p><img src="images/black.png" height="20" width="20" />  Power interuption</p> 
+                            </div>
+                            
+                            <!--Data-->
+                            <div class="col-md-6">
+                                <p>Possibility of Outage occuring</p>
+                                <p style="font-size: 50px">14%</p>
+                             
+                            </div>
+                               
                         </div>
+                        
+                        
+                        <div class='row'><div class='span12'><hr style="color: solid black; height: 15px"></div></div>
+                        
+                        <!--SECOND ROW-->
+                        <div class="row">
+                            
+                            <!--FIRST COL-->
+                            <div class="col-md-5">
+                                <img src="images/time.png" height="125" width="125"/>
+                                <br><br>
+                                
+                            </div>
+                            
+                            <!--SECOND COL-->
+                            <div class="col-md-7">
+                                <p><img src="images/box.png" height="25" width="25" style="background-color: #cc7a00"/> Scheduled Power Outages</p>
+                                <p> Friday 3rd MAY<br> <span style="font-size: 20px"> 3:00 am to 5:00 am </span>
+                            </div>    
+                             
+                        </div>
+                       
+                       <div class='row'><div class='span12'><hr style="color: solid black; height: 15px"></div></div>
+                       
+                       <!--Final Row-->
+                        <div class="row">
+                            
+                            <!--Report Col-->
+                            <div class="col-md-6">
+                                <p>Experiencing an Outage?</p>
+                                <div class="btn-group btn-group-lg" role="group" aria-label="YES"></div>
+                                <div class="btn-group" role="group" aria-label="NO">
+                                     <button type="button" class="btn btn-default" style="background-color: green">YES</button>
+                                     <button type="button" class="btn btn-default">NO</button>
+                                </div>
+                                    
+                            </div>
+                            
+                            <!--Reach KPLC col-->
+                            <div class="col-md-6">
+                                <p>Report to Kenya Power</p>
+                                <div style="display: inline-block">
+                                    <a href=""><img src="images/message.png" height="30" width="30"/></a>
+                                    <a href=""><img src="images/twitter.png" height="30" width="30"/></a>
+                                    <a href=""><img src="images/sms.png" height="30" width="30" /></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
                     </div>
                     
                     <div class="col-md-4">
@@ -63,16 +207,79 @@
                             <div class="navbar-header">
                             <a href="#" class="navbar-brand">RUNDA</a>
                             </div>
+                            <ul class="nav navbar-nav">
+                                <li class="nav navbar-nav navbar-right"><a href="" style="text-decoration: none">View Feed</a></li>
+                                <li class="nav navbar-nav navbar-left"><img src="images/location.png" height="30" width="30" /></li>
+                            </ul>
                         </nav>
                         
-                        <img src="images/pie-chart.png" height="150" width="150" /><br/><br/>
-                        <div style="display: inline-block" align="center" >
-                            <a href=""><img src="images/message.png" height="50" width="50"/></a>
-                            <a href=""><img src="images/twitter.png" height="50" width="50"/></a>
-                            <a href=""><img src="images/share.png" height="50" width="50" /></a>
+                         <!--FIRST ROW-->
+                        <div class="row">
+                            <!--Charts-->
+                            <div class="col-md-6">
+                                <img src="images/pie-chart.png" height="125" width="125" />
+                                <br><br>
+                                <p><img src="images/black.png" height="20" width="20" />  Power interuption</p> 
+                            </div>
+                            
+                            <!--Data-->
+                            <div class="col-md-6">
+                                <p>Possibility of Outage occuring</p>
+                                <p style="font-size: 50px">11%</p>
+                             
+                            </div>
+                               
                         </div>
-                    </div>
-                </div>
+                        
+                        
+                        <div class='row'><div class='span12'><hr style="color: solid black; height: 15px"></div></div>
+                        
+                        <!--SECOND ROW-->
+                        <div class="row">
+                            
+                            <!--FIRST COL-->
+                            <div class="col-md-5">
+                                <img src="images/time.png" height="125" width="125"/>
+                                <br><br>
+                                
+                            </div>
+                            
+                            <!--SECOND COL-->
+                            <div class="col-md-7">
+                                <p><img src="images/box.png" height="25" width="25" style="background-color: #cc7a00"/> Scheduled Power Outages</p>
+                                <p> Friday 3rd MAY<br> <span style="font-size: 20px"> 1:00 am to 5:00 am </span>
+                            </div>    
+                             
+                        </div>
+                       
+                       <div class='row'><div class='span12'><hr style="color: solid black; height: 15px"></div></div>
+                       
+                       <!--Final Row-->
+                        <div class="row">
+                            
+                            <!--Report Col-->
+                            <div class="col-md-6">
+                                <p>Experiencing an Outage?</p>
+                                <div class="btn-group btn-group-lg" role="group" aria-label="YES"></div>
+                                <div class="btn-group" role="group" aria-label="NO">
+                                     <button type="button" class="btn btn-default" style="background-color: green">YES</button>
+                                     <button type="button" class="btn btn-default">NO</button>
+                                </div>
+                                    
+                            </div>
+                            
+                            <!--Reach KPLC col-->
+                            <div class="col-md-6">
+                                <p>Report to Kenya Power</p>
+                                <div style="display: inline-block">
+                                    <a href=""><img src="images/message.png" height="30" width="30"/></a>
+                                    <a href=""><img src="images/twitter.png" height="30" width="30"/></a>
+                                    <a href=""><img src="images/sms.png" height="30" width="30" /></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
           </div>
 
         </body>
